@@ -1,0 +1,69 @@
+/*-- scss:defaults --*/
+
+$gems-navy:       #043558;
+$gems-blue:       #4D8AB5;
+$gems-off-white:  #F6F7F4;
+$gems-gray:       #333333;
+
+$primary: $gems-blue;
+$body-bg: $gems-off-white;
+$body-color: $gems-gray;
+$link-color: $gems-blue;
+$link-hover-color: lighten($gems-blue, 25%);
+$focus-ring-color: rgba($gems-blue, 0.3);
+
+$font-family-sans-serif: "Open Sans", sans-serif;
+$headings-font-family: "Montserrat", sans-serif;
+$headings-color: $gems-navy;
+
+/*-- scss:rules --*/
+
+a:hover {
+  color: lighten($gems-blue, 25%);
+}
+
+/* SurveyDown question container */
+.sd-question,
+.question {
+  margin-block: 1.25rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid rgba($gems-blue, 0.18);
+  border-left: 0.4rem solid $gems-blue;
+  border-radius: 0.25rem;
+  background: #fff;
+}
+
+/* Form controls */
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+  border-color: $gems-blue;
+  box-shadow: 0 0 0 0.2rem rgba($gems-blue, 0.2);
+}
+
+.form-check-input:checked {
+  background-color: $gems-blue;
+  border-color: $gems-blue;
+}
+
+/* Buttons */
+.btn-primary,
+.action-button.btn-primary {
+  background-color: $gems-blue;
+  border-color: $gems-blue;
+}
+
+.btn-primary:hover,
+.action-button.btn-primary:hover {
+  background-color: lighten($gems-blue, 10%);
+  border-color: lighten($gems-blue, 10%);
+}
+
+/* Survey progress indicators, where applicable */
+.progress-bar {
+  background-color: $gems-blue;
+}
+
+.thetitle h1{
+  text-align: center;
+}
