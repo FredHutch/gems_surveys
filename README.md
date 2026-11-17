@@ -4,8 +4,8 @@ This repository contains the survey source code for the [Genomics Education Modu
 
 ## Student Pre Survey
 
-This directory contains the survey targeted at students pre-module completion. It can serve as a baseline.
+[`student_pre_survey`](https://github.com/FredHutch/gems_surveys/tree/main/student_pre_survey) contains the survey targeted at students pre-module completion. It can serve as a baseline.
 
 ## Student Post Survey
 
-This directory contains the survey targeted at students post-module completion. It serves to measure improvement and collect general feedback.
+[`student_post_survey`](https://github.com/FredHutch/gems_surveys/tree/main/student_post_survey) contains the survey targeted at students post-module completion. It serves to measure improvement and collect general feedback.
