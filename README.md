@@ -1,6 +1,6 @@
 # Surveys for the GEMs Project
 
-This repository contains the survey source code for the [Genomics Education Modules (GEMs) Project](https://genomicseducation.org/). GEMs is funded by the National Human Genome Research Institute under award 1R25HG013489.
+This repository contains the survey source code for the [Genomics Education Modules (GEMs) Project](https://genomicseducation.org/). GEMs is funded by the National Human Genome Research Institute under award 1R25HG013489 to Fred Hutch.
 
 ## Student Pre Survey
 
