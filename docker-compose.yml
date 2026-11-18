@@ -1,0 +1,23 @@
+version: '3.3'
+services:
+  gems-survey:
+    image: sc-registry.fredhutch.org/gems-survey:latest
+    networks:
+      - sc-swarm-net
+    deploy:
+      restart_policy:
+        condition: on-failure
+      labels:
+        - "org.fredhutch.first_deployed_date=2026-11-18T17:54:23Z"
+        - "org.fredhutch.app.owner=ahoffma2@fredhutch.org"
+        - "org.fredhutch.github.repo=gems_surveys"
+        - "traefik.enable=true"
+        - "traefik.http.routers.gems-survey.rule=Host(`gems-survey.fredhutch.org`)"
+        - "traefik.http.routers.gems-survey-secured.rule=Host(`gems-survey.fredhutch.org`)"
+        - "traefik.http.routers.gems-survey.entrypoints=web,web-secured"
+        - "traefik.http.services.gems-survey.loadbalancer.server.port=80" # it seems you always need to give traefik a port so it 'notices' the service
+        - "traefik.http.routers.gems-survey.tls=true"
+
+networks:
+  sc-swarm-net:
+    external: true
