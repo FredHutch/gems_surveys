@@ -26,7 +26,7 @@ PID_NGINX=$!
 
 # Trap termination signals so we can gracefully kill child processes if the container stops
 # trap "kill -TERM $PID_APP1 $PID_APP2 $PID_NGINX; exit 0" SIGTERM SIGINT
-trap "kill -TERM $PID_APP1 $PID_NGINX; exit 0" SIGTERM SIGINT
+trap "kill -TERM $PID_APP1 $PID_APP2 $PID_NGINX; exit 0" SIGTERM SIGINT
 
 # Wait for any process to exit. If one dies, exit the script so Docker knows it failed.
 wait -n
