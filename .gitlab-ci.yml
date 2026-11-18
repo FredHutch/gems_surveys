@@ -23,6 +23,8 @@ stages:
 build:
   stage: build
   script:
+    - echo $DOTENV_BASE64_PRE | base64 -d > student_pre_survey/.env
+    - echo $DOTENV_BASE64_POST | base64 -d > student_post_survey/.env
     - docker build -t sc-registry.fredhutch.org/gems-survey:$CI_COMMIT_SHORT_SHA .
 
 test:
